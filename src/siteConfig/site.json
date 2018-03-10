@@ -1,0 +1,25 @@
+{
+  "avatar": "./avatar.jpeg",
+  "title": "I'M WEBBER",
+  "subTitle": "我是一名網站開發者",
+  "intro": "Nodejs, 前端開發",
+  "social": [
+    {
+      "text": "Blog",
+      "link": "http://webber0928.blogspot.tw/"
+    },
+    {
+      "text": "Github",
+      "link": "https://github.com/webber0928"
+    },
+    {
+      "text": "Mail",
+      "link": "mailto:bird23074035@gmail.com"
+    },
+    {
+      "text": "Resume",
+      "link": "https://drive.google.com/open?id=1lr82ebT-Q1v7A8RKavflRc9I6qoi1Bps"
+    }
+  ],
+  "copyright": "© 2018 by Webber Wu"
+}
