@@ -1,37 +1,45 @@
-## Welcome to GitHub Pages
+## Welcome to WB web
 
-You can use the [editor on GitHub](https://github.com/webber0928/webber0928.github.com/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+webber's web project
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Fork [矮大紧的日常](https://parksben.github.io)
 
-### Markdown
+主要用於介紹個人的作品頁。
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## 開發環境
 
-```markdown
-Syntax highlighted code block
+* node.js： v8.9.4 
+* react: v16.0.0
 
-# Header 1
-## Header 2
-### Header 4
+## 使用说明
 
-- Bulleted
-- List
+### 1. 啟動
 
-1. Numbered
-2. List
+* 指令 `npm start` 啟動開發模式
 
-**Bold** and _Italic_ and `Code` text
+### 2. 個人頁設定
 
-[Link](url) and ![Image](src)
-```
+* `src/siteConfig/site.json` 個人資訊
+* `public/manifest.json` 文件（pwa相關屬性）
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### 3. 建立文章
 
-### Jekyll Themes
+* 指令 `npm run new-post` 建立新的文章目錄（在 `src/posts/` 下）
+* 編輯你的文章，文章中引用的圖片需放到相同的目錄下
+* 指令 `npm run compile` 可隨時打包文章，打包成功可正常瀏覽該文章
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/webber0928/webber0928.github.com/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### 4. build
 
-### Support or Contact
+* 指令 `npm run build` 建立靜態資源
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### 5. 發布 github page
+
+* 指令 `npm run deploy` 會將 build 好的頁面發佈到 master 分支
+* 詳情參考 [gh-pages](https://github.com/tschaub/gh-pages) Command Line
+
+### 6. 刪除所有文章
+
+* 指令 `npm run del-post` 刪除舊有文章目錄（在 `src/posts/` 下）
+
+
+
