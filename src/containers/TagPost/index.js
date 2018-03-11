@@ -74,7 +74,7 @@ export class TagPost extends Component {
           size="large"
           className="load-more"
           onClick={() => this._loadPage(this.pageNum + 1)}>
-          加载更多文章
+          加載更多文章
         </Button>
       : false;
 

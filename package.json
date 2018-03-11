@@ -28,6 +28,7 @@
     "redux-thunk": "2.2.0"
   },
   "scripts": {
+    "del-post": "node delPost.js src/posts",
     "new-post": "node newPost.js",
     "compile": "node compile.js",
     "start": "react-app-rewired start",

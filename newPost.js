@@ -18,7 +18,7 @@ const questions = [
         return true;
       }
 
-      return '文章别名不合法，請重新輸入↑↑';
+      return '文章名稱不合法，請重新輸入↑↑';
     },
     filter: value => value.replace(/\s+/gi, '-'),
   },
@@ -65,11 +65,11 @@ inquirer
       fs.writeFileSync(path.resolve(`${postDirName}thumb.jpg`), dataBuffer);
 
       console.log(
-        `\n文章目錄：\`${postDirName}\` 已創建，您可以愉快地編輯文章了！\n編輯完成後請使用 \`npm run compile\` 命令建構文章（自動建構功能正在努力開發中...）`
+        `\n文章目錄：\`${postDirName}\` 已建立，您可以編輯文章！\n編輯完成後請使用 \`npm run compile\` 命令建構文章`
       );
     }
   })
   .catch(err => {
     console.log(err);
-    console.log('文章目錄創建失敗了...');
+    console.log('文章目錄建立失敗了...');
   });
