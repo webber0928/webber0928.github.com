@@ -48,7 +48,7 @@ export class Home extends Component {
     const navList = [
       {
         linkTo: '/',
-        tag: `全部文章（${postCount}）`,
+        tag: `全部（${postCount}）`,
       },
       ...tagInfo,
     ];
@@ -58,7 +58,7 @@ export class Home extends Component {
           size="large"
           className="load-more"
           onClick={() => this._loadPage(this.pageNum + 1)}>
-          加載更多文章
+          加載更多
         </Button>
       : false;
 
@@ -66,7 +66,7 @@ export class Home extends Component {
       <div className="page-container">
         <SideBar data={siteConfig} />
         <div className="post-list">
-          <Header data={navList} activeTag={`全部文章（${postCount}）`} />
+          <Header data={navList} activeTag={`全部（${postCount}）`} />
           <PostList data={postList} />
           {loadMoreBtn}
         </div>

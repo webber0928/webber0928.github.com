@@ -10,16 +10,15 @@
   justify-content: space-between;
   text-align: right;
   background-color: #1f1815;
-  /*background-image: url(./images/side_bg.jpg);*/
   background-position: top left, top left;
   background-repeat: repeat, no-repeat;
   background-size: auto, auto 100%;
   font-size: var(--main-font-size);
+  overflow: scroll;
 }
 
 #header * {
   color: rgba(255, 255, 255, 0.9);
-  /*color: rgba(255, 255, 255, 0.5);*/
 }
 
 #header *:hover {
@@ -95,4 +94,18 @@
   font-size: 0.6em;
   line-height: 1em;
   margin: 0;
+}
+
+@media only screen and (max-width: 576px) {
+  #header {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+  }
+  #header > * {
+    margin: auto!important;
+  }
+  .block-blank {
+    height: 20px;
+  }
 }

@@ -53,3 +53,26 @@
   height: 1px;
   background: #fff;
 }
+
+@media only screen and (max-width: 576px) {
+  .page-container .post-list {
+    margin-left: 0!important;
+    width: 100%!important;
+  }
+  .header-nav {
+    position: relative;
+    width: 100%;
+  }
+  a.thumb {
+    width: 100%!important;
+  }
+
+  .post-container {
+    width: 100%!important;
+    margin: 0!important;
+    padding: 0!important;
+  }
+  .markdown-navigation.article-menu {
+    display: none;
+  }
+}

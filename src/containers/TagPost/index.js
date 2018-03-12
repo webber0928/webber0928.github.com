@@ -64,7 +64,7 @@ export class TagPost extends Component {
     const navList = [
       {
         linkTo: '/',
-        tag: `全部文章（${postCount}）`,
+        tag: `全部（${postCount}）`,
       },
       ...tagInfo,
     ];
@@ -74,7 +74,7 @@ export class TagPost extends Component {
           size="large"
           className="load-more"
           onClick={() => this._loadPage(this.pageNum + 1)}>
-          加載更多文章
+          加載更多
         </Button>
       : false;
 

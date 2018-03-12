@@ -50,7 +50,7 @@ export class Article extends Component {
     const navList = [
       {
         linkTo: '/',
-        tag: `全部文章（${postCount}）`,
+        tag: `全部（${postCount}）`,
       },
       ...tagInfo,
     ];
