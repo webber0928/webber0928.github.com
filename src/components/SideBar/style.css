@@ -104,8 +104,13 @@
   }
   #header > * {
     margin: auto!important;
+    text-align: center;
   }
   .block-blank {
     height: 20px;
+  }
+
+  .links {
+    padding: 0!important;
   }
 }
